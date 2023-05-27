@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('../img/fundo-quadrado.jpg');
+    background-color: rgba(128, 0, 128, 0.5);
+    font-family: var(--font-primaria);
+}
+
+:root {
+    --font-primaria: 'Roboto Slab', serif;
+}
+
+.pagina-form {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 16.87rem;
+    height: 21.00rem;
+    border-radius: 0.625rem;
+    background: #71717177;
+    margin: 0;
+}
+
+.titulo {
+    font-size: 1.9em;
+    font-weight: 600;
+    padding-bottom: 3.20rem;
+}
+
+.identificadorDado {
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.entradaDado {
+    padding: 0.312rem;
+    border-radius: 0.312rem;
+}
+.entradaDado::placeholder {
+    font-family: var(--font-primaria);
+    font-size: 1em;
+}
+
+.botao {
+    height: 30px;
+    width: 30%;
+    border-radius: 0.312rem;
+    background-color: rgb(247, 247, 247);
+    font-family: var(--font-primaria);
+    color: #000;
+    font-weight: 600;
+    margin-top:0.625rem;
+}
+.botao:hover {
+    background: rgb(70, 70, 70);
+}
+
+@media screen and (min-width:230px) {
+    .formulario {
+        width:  80%;
+        height: 25rem;
+    }
+    .entradaDado {
+        width: 10rem;
+    }
+}
+
+@media screen and (min-width:320px) {
+    .formulario {
+        width: 80%;
+        height: 30rem;
+    }
+    .botao {
+        margin-top: 1.8rem;
+    }
+}
+
+
+@media screen and (min-width:500px) {
+    .formulario {
+        width: 60%;
+        height: 28rem;
+        }
+    .titulo {
+        font-size: 2.5em;
+    }
+    .entradaDado {
+        height: 2rem;
+        width: 17rem;
+    }
+}
